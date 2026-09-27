@@ -1,0 +1,2 @@
+document.querySelector('.back-team')?.addEventListener('click',e=>{if(window.parent!==window&&window.parent.dashboardControls?.playTeamIntro){e.preventDefault();const destination=e.currentTarget.href;window.parent.dashboardControls.playTeamIntro();setTimeout(()=>window.location.href=destination,120)}});
+document.querySelector('.andrew-enter-game')?.addEventListener('click',()=>{if(window.parent!==window)window.parent.dashboardControls?.playTeamIntro?.()});
